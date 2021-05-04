@@ -1,6 +1,15 @@
 # Baseliner_4.21.exe; version 2021 released 2021.05.04
-Updated version
-Version compiled using MATLAB R2021a on a Windows10 machine, so may require more recent version of MATLAB Runtime (see below), or may work as stand alone applicaiton.
+Updated version of the stand-alone Windows application. Analogous to the MATLAB-based Baseliner_4_02 version (released 2020.07.07) https://github.com/Coweeta/baseliner4
+Version compiled using MATLAB R2021a on a Windows10 machine.
+
+Download and run either 
+Baseliner_4.21.exe
+or
+MyAppInstaller_web.exe
+
+Each file will run an installer program (that will also prompt you to download the MATLAB Runtime program).
+
+Thanks to Chainey Boroski at Duke University for compiling the current version!
 
 please contact Chris Oishi with questions or feedback: andrew.c.oishi@usda.gov
 
