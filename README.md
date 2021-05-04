@@ -1,3 +1,9 @@
+# Baseliner_4; version 2021 released 2021.05.04
+Updated version
+Version compiled using MATLAB R2021a on a Windows10 machine, so may require more recent version of MATLAB Runtime (see below), or may work as stand alone applicaiton.
+
+please contact Chris Oishi with questions or feedback: andrew.c.oishi@usda.gov
+
 # Baseliner_4_01.exe; version released 2018.12.12
 Functionally identical to previous version, but now will correct for common time-step errors, including missing or duplicate time-steps and midnight time/day errors (if midnight is recorded as 00:00 it should be the first time step of a day, else if 24:00 it should be the last time-step of the day).
 Version compiled using MATLAB R2018b, so may require more recent version of MATLAB Runtime (see below), or may work as stand alone applicaiton.
