@@ -1,3 +1,25 @@
+# Updates 2022.7.7
+New updates improve automatic delta-T-max "baseline" point selection:
+
+New option in initial configuration window allows user to define threshold for stable nighttime delta-T conditions. This approach is based on Oishi et al., AgForMet 2008 (doi:10.1016/j.agrformet.2008.06.013). Default threshold value is 0.005 (or 0.5%), but should be evaluated by individual users based on their own data.
+Nighttime stability is determined using the following function:
+
+S = N / V
+
+where S is stability, N is the standard deviation of nighttime delta-T values within the user-defined time range (this is the same time range for stable nighttime VPD conditions, default is 2-hours), and V is diurnal variability of delta-T for a 7-day moving window centered on a given night where
+
+V = mean (P(i) - L(i))
+
+and
+
+P(i) is the peak value of delta-T for day i, defined by the upper quartile of nightime values L(i) is the low value of delta-T for day i, defined by the lower quartile of daytime values.
+
+This quartile approach is used rather than the absolute maximum or minimum to avoid influence of data spikes.
+
+New automatic delta-T-max point selection will pick the peak nighttime value where VPD and delta-T stability are below user-defined threshold values. Previous approach selected the final value (i.e., last point in time) meeting these conditions, rather than the peak.
+
+Some changes to plot symbol shapes and colors in the graphical user interface (stable nighttime delta-T and low nighttime VPD).
+
 # update 2021.5.14: Baseliner download with MATLAB Runtime included
 Baseliner_4.21runtime.exe: You can download and run this installer without needing an separate download of the Runtime program
 
